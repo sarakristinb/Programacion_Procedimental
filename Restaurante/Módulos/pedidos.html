@@ -3,145 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Brasa | Menú de Cortes</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-    <style>
-        /* Estética "No-IA": Colores orgánicos y tipografía con carácter */
-        :root {
-            --carne-dark: #2c1a1a;
-            --accent: #b33939;
-            --fondo: #f4f1ea;
-        }
-
-        body {
-            background-color: var(--fondo);
-            color: var(--carne-dark);
-        }
-
-        .section-title {
-            font-family: 'Georgia', serif;
-            border-bottom: 2px solid var(--accent);
-            display: inline-block;
-            margin-bottom: 2rem;
-            padding-bottom: 5px;
-        }
-
-        /* Conservando tu estructura original de tarjeta con imagen izquierda */
-        .custom-card {
-            background: white;
-            border-radius: 4px;
-            box-shadow: 10px 10px 0px rgba(0,0,0,0.05); /* Sombra sólida, estilo diseño gráfico */
-            margin-bottom: 2rem;
-            overflow: hidden;
-            border: 1px solid #e0ddd5;
-            transition: all 0.3s ease;
-        }
-
-        .custom-card:hover {
-            transform: translate(-3px, -3px);
-            box-shadow: 15px 15px 0px rgba(179, 57, 57, 0.1);
-        }
-
-        .card-img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            filter: sepia(0.2); /* Toque vintage */
-        }
-
-        .price-tag {
-            font-family: 'Courier New', Courier, monospace;
-            font-weight: bold;
-            color: var(--accent);
-            font-size: 1.2rem;
-        }
-
-        .description {
-            font-style: italic;
-            color: #666;
-            font-size: 0.9rem;
-            line-height: 1.2;
-        }
-
-        .btn-pedir {
-            background-color: var(--carne-dark);
-            color: white;
-            border: none;
-            padding: 8px 15px;
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            letter-spacing: 1px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-
-        .columns.is-vcentered {
-            align-items: center;
-        }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+    <title>Macdonitas - Sabores del Medio Oriente</title>
 </head>
 <body>
 
-    <section class="section">
-        <div class="container" style="max-width: 800px;">
-            <h2 class="title is-3 section-title">Cortes de Autor</h2>
+            <div class="box mt-6">
+                <h2 class="title is-3 has-text-centered">
+                    Haz tu pedido en Macdonitas
+                </h2>
+                <p class="has-text-centered mb-5">
+                    Completa el formulario y pronto estaremos preparando tu comida favorita.
+                </p>
 
-            <!-- Producto 1 -->
-            <div class="custom-card">
-                <div class="columns is-mobile is-gapless is-vcentered">
-                    <div class="column is-auto">
-                        <img src="https://assets.biggreenegg.eu/app/uploads/2021/08/30110530/topimage-pork-tomahawk-2021m09-800x533-1.jpg" class="card-img" alt="Tomahawk">
-                    </div>
-                    <div class="column is-three-quarters p-4">
-                        <div class="is-flex is-justify-content-space-between is-align-items-start">
-                            <div>
-                                <h3 class="title is-5 mb-1">Tomahawk Angus</h3>
-                                <p class="description mb-2">Hueso largo, marmoleo grado 5. Sellado en leña de encino.</p>
-                                <span class="price-tag">$45.000</span>
-                            </div>
-                            <button class="btn-pedir">Añadir</button>
+                <form>
+                    <div class="field">
+                        <label class="label">Nombre del cliente</label>
+                        <div class="control">
+                            <input 
+                                class="input" 
+                                type="text" 
+                                placeholder="Escribe tu nombre completo"
+                            >
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="custom-card">
-                <div class="columns is-mobile is-gapless is-vcentered">
-                    <div class="column is-auto">
-                        <img src="https://tienda.atlantic.la/cdn/shop/files/PUNTA_DE_ANCA_-_SELECTA_DEL_CHEF_x_300GR_1_-min_eae3b709-9daf-4284-9742-ba7d249968aa.png?v=1754705448" class="card-img" alt="Punta de Anca">
-                    </div>
-                    <div class="column is-three-quarters p-4">
-                        <div class="is-flex is-justify-content-space-between is-align-items-start">
-                            <div>
-                                <h3 class="title is-5 mb-1">Punta de Anca</h3>
-                                <p class="description mb-2">Corte tierno con cobertura de grasa crocante y sal de mar.</p>
-                                <span class="price-tag">$38.000</span>
+                    <div class="field">
+                        <label class="label">¿Qué producto deseas ordenar?</label>
+                        <div class="control">
+                            <div class="select is-fullwidth">
+                                <select>
+                                    <option>Selecciona un producto</option>
+                                    <option>Shawarma Mixto</option>
+                                    <option>Hummus Clásico</option>
+                                    <option>Falafel Crujiente</option>
+                                    <option>Baklava de Pistacho</option>
+                                </select>
                             </div>
-                            <button class="btn-pedir">Añadir</button>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="custom-card">
-                <div class="columns is-mobile is-gapless is-vcentered">
-                    <div class="column is-auto">
-                        <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?q=80&w=400&h=400&fit=crop" class="card-img" alt="Pollo Naranja">
-                    </div>
-                    <div class="column is-three-quarters p-4">
-                        <div class="is-flex is-justify-content-space-between is-align-items-start">
-                            <div>
-                                <h3 class="title is-5 mb-1">Pollo a la Naranja</h3>
-                                <p class="description mb-2">Pechuga marinada en cítricos y jengibre, terminada al grill.</p>
-                                <span class="price-tag">$25.000</span>
-                            </div>
-                            <button class="btn-pedir">Añadir</button>
+
+                    <div class="field">
+                        <label class="label">Cantidad del producto</label>
+                        <div class="control">
+                            <input 
+                                class="input" 
+                                type="number" 
+                                placeholder="Ejemplo: 2"
+                            >
                         </div>
                     </div>
-                </div>
+
+                    <div class="field">
+                        <label class="label">Dirección de entrega</label>
+                        <div class="control">
+                            <textarea 
+                                class="textarea" 
+                                placeholder="Escribe la dirección donde deseas recibir tu pedido"
+                            ></textarea>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Número de teléfono</label>
+                        <div class="control">
+                            <input 
+                                class="input" type="tel" placeholder="Ejemplo: 3001234567"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Método de pago</label>
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="pago">
+                                Efectivo
+                            </label>
+
+                            <label class="radio ml-4">
+                                <input type="radio" name="pago">
+                                Tarjeta
+                            </label>
+
+                            <label class="radio ml-4">
+                                <input type="radio" name="pago">
+                                Transferencia
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="field has-text-centered mt-5">
+                        <button class="button is-warning is-medium">
+                            Confirmar Pedido
+                        </button>
+                    </div>
+                </form>
             </div>
 
         </div>
     </section>
-
 </body>
 </html>

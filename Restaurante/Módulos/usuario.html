@@ -10,139 +10,189 @@
     <title>Usuario</title>
 </head>
 <body>
-<div class="field">
-  <label class="label">Nombre</label>
-  <div class="control">
-    <input class="input" type="text">
-  </div>
-</div>
 
-<div class="field">
-  <label class="label">Apellido</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-success" type="text">
-    <span class="icon is-small is-left">
-      <i class="fas fa-user"></i>
-    </span>
-    <span class="icon is-small is-right">
-      <i class="fas fa-check"></i>
-    </span>
-  </div>
-</div>
+<section class="section">
+    <div class="container">
 
-<div class="field">
-  <label class="label">Tipo de documento</label>
-  <div class="control">
-    <div class="select">
-      <select>
-        <option>Cédula ciudadania</option>
-        <option>Cédula extranjería</option>
-        <option>Pasaporte</option>
-      </select>
+        <div class="box">
+            <h1 class="title is-3 has-text-centered">
+                Registro de Usuario
+            </h1>
+
+            <p class="has-text-centered mb-5">
+                Completa la siguiente información para continuar con tu registro.
+            </p>
+
+            <div class="field">
+              <label class="label">Nombre</label>
+              <div class="control">
+                <input 
+                  class="input" 
+                  type="text" 
+                  placeholder="Escribe tu nombre"
+                >
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Apellido</label>
+              <div class="control has-icons-left has-icons-right">
+                <input 
+                  class="input is-success" 
+                  type="text"
+                  placeholder="Escribe tu apellido"
+                >
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user"></i>
+                </span>
+                <span class="icon is-small is-right">
+                  <i class="fas fa-check"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Tipo de documento</label>
+              <div class="control">
+                <div class="select is-fullwidth">
+                  <select>
+                    <option>Cédula ciudadania</option>
+                    <option>Cédula extranjería</option>
+                    <option>Pasaporte</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Número de Documento</label>
+              <div class="control has-icons-left has-icons-right">
+                <input 
+                  class="input is-danger" 
+                  type="tel"
+                  placeholder="Ingresa tu número de documento"
+                >
+                <span class="icon is-small is-left">
+                  <i class="fas fa-id-card"></i>
+                </span>
+                <span class="icon is-small is-right">
+                  <i class="fas fa-exclamation-triangle"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Teléfono</label>
+              <div class="control has-icons-left has-icons-right">
+                <input 
+                  class="input is-danger" 
+                  type="tel"
+                  placeholder="Ejemplo: 3001234567"
+                >
+                <span class="icon is-small is-left">
+                  <i class="fas fa-phone"></i>
+                </span>
+                <span class="icon is-small is-right">
+                  <i class="fas fa-exclamation-triangle"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Correo electrónico</label>
+              <div class="control has-icons-left has-icons-right">
+                <input 
+                  class="input is-danger" 
+                  type="email"
+                  placeholder="correo@ejemplo.com"
+                >
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <span class="icon is-small is-right">
+                  <i class="fas fa-exclamation-triangle"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Género</label>
+              <div class="control">
+                <div class="select is-fullwidth">
+                  <select>
+                    <option>Femenino</option>
+                    <option>Masculino</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Cargo</label>
+              <div class="control">
+                <div class="select is-fullwidth">
+                  <select>
+                    <option>Chef</option>
+                    <option>Mesero</option>
+                    <option>Bartender</option>
+                    <option>Administrador</option>
+                    <option>Cajero</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Fecha de Nacimiento</label>
+              <div class="control has-icons-left has-icons-right">
+                <input 
+                  class="input is-success" 
+                  type="date"
+                >
+                <span class="icon is-small is-left">
+                  <i class="fas fa-calendar"></i>
+                </span>
+                <span class="icon is-small is-right">
+                  <i class="fas fa-check"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Contraseña</label>
+              <div class="control has-icons-left has-icons-right">
+                <input 
+                  class="input is-success" 
+                  type="password"
+                  placeholder="Crea una contraseña segura"
+                >
+                <span class="icon is-small is-left">
+                  <i class="fas fa-lock"></i>
+                </span>
+                <span class="icon is-small is-right">
+                  <i class="fas fa-check"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field is-grouped is-justify-content-center mt-5">
+              <div class="control">
+                <button class="button is-warning is-medium">
+                  Enviar
+                </button>
+              </div>
+              
+              <div class="control">
+                <button class="button is-light is-medium">
+                  Cancelar
+                </button>
+                
+              </div>
+            </div>
+
+        </div>
     </div>
-  </div>
-</div>
+</section>
 
-<div class="field">
-  <label class="label">Número de Documento</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-danger" type="tel">
-    <span class="icon is-small is-left">
-      <i class="fas fa-id-card"></i>
-    </span>
-    <span class="icon is-small is-right">
-      <i class="fas fa-exclamation-triangle"></i>
-    </span>
-  </div>
-</div>
-
-<div class="field">
-  <label class="label">Teléfono</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-danger" type="tel">
-    <span class="icon is-small is-left">
-      <i class="fas fa-phone"></i>
-    </span>
-    <span class="icon is-small is-right">
-      <i class="fas fa-exclamation-triangle"></i>
-    </span>
-  </div>
-</div>
-
-<div class="field">
-  <label class="label">Correo electrónico</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-danger" type="email">
-    <span class="icon is-small is-left">
-      <i class="fas fa-envelope"></i>
-    </span>
-    <span class="icon is-small is-right">
-      <i class="fas fa-exclamation-triangle"></i>
-    </span>
-  </div>
-</div>
-
-<div class="field">
-  <label class="label">Género</label>
-  <div class="control">
-    <div class="select">
-      <select>
-        <option>Femenino</option>
-        <option>Masculino</option>
-      </select>
-    </div>
-  </div>
-</div>
-
-<div class="field">
-  <label class="label">Cargo</label>
-  <div class="control">
-    <div class="select">
-      <select>
-        <option>Chef</option>
-        <option>Mesero</option>
-        <option>Bartender</option>
-        <option>Administrador</option>
-        <option>Cajero</option>
-      </select>
-    </div>
-  </div>
-</div>
-
-<div class="field">
-  <label class="label">Fecha de Nacimiento</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-success" type="date">
-    <span class="icon is-small is-left">
-      <i class="fas fa-calendar"></i>
-    </span>
-    <span class="icon is-small is-right">
-      <i class="fas fa-check"></i>
-    </span>
-  </div>
-</div>
-
-<div class="field">
-  <label class="label">Contraseña</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-success" type="password">
-    <span class="icon is-small is-left">
-      <i class="fas fa-lock"></i>
-    </span>
-    <span class="icon is-small is-right">
-      <i class="fas fa-check"></i>
-    </span>
-  </div>
-</div>
-
-<div class="field is-grouped">
-  <div class="control">
-    <button class="button is-link">Enviar</button>
-  </div>
-  
-    <div class="control">
-    <button class="button is-link is-light">Cancelar</button>
-  </div>
-</div>
 </body>
 </html>
