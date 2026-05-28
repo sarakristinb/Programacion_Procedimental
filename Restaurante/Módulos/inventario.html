@@ -29,14 +29,14 @@
     <div class="field">
   <label class="label">Código Producto</label>
   <div class="control">
-    <input class="input" type="number">
+    <input class="input" type="number" id="codigo" placeholder="Ejemplo: 12345">
   </div>
 </div>
 
 <div class="field">
   <label class="label">Nombre Producto</label>
   <div class="control has-icons-left has-icons-right">
-    <input class="input is-success" type="text">
+    <input class="input is-success" type="text" id="nombre" placeholder="Ejemplo: Coca-Cola">
     <span class="icon is-small is-left">
       <i class="fas fa-user"></i>
     </span>
@@ -49,7 +49,9 @@
 <div class="field">
   <label class="label">Cantidad</label>
   <div class="control has-icons-left has-icons-right">
-    <input class="input is-danger" type="number">
+    <input class="input is-danger" 
+    type="number" 
+    id="cantidad" placeholder="Ejemplo: 100 ">
     <span class="icon is-small is-left">
       <i class="fas fa-envelope"></i>
     </span>
@@ -62,7 +64,7 @@
 <div class="field">
   <label class="label">Marca Producto</label>
   <div class="control has-icons-left has-icons-right">
-    <input class="input is-success" type="text">
+    <input class="input is-success" type="text" id="marca" placeholder="Ejemplo: Coca-Cola">
     <span class="icon is-small is-left">
       <i class="fas fa-user"></i>
     </span>
@@ -71,8 +73,6 @@
     </span>
   </div>
 </div>
-
-
 <div class="field is-grouped">
   <div class="control">
     <button class="button is-link">Enviar</button>
@@ -89,5 +89,6 @@
   </div>
   </center>
 </div>
+<script src="../js/inventario.js"></script>
 </body>
 </html>
