@@ -7,3 +7,6 @@ let genero_usuario = document.querySelector('select[name="genero_usuario"]').val
 let cargo_usuario = document.querySelector('select[name="cargo_usuario"]').value;
 let fecha_nacimiento_usuario = document.getElementById("fecha_nacimiento_usuario").value;
 let contraseña_usuario = document.getElementById("contraseña_usuario").value;
+function ValidarDatos() {
+    // Aquí puedes agregar la lógica para enviar los datos al servidor o realizar otras acciones necesarias
+    console.log("Nombre de usuario:", nombre_usuario); }
