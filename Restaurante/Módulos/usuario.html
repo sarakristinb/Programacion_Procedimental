@@ -31,6 +31,7 @@
                   class="input" 
                   type="text" 
                   placeholder="Escribe tu nombre"
+                  required
                 >
               </div>
             </div>
@@ -43,6 +44,7 @@
                   class="input is-success" 
                   type="text"
                   placeholder="Escribe tu apellido"
+                  required
                 >
                 <span class="icon is-small is-left">
                   <i class="fas fa-user"></i>
@@ -57,7 +59,7 @@
               <label class="label">Tipo de documento</label>
               <div class="control">
                 <div class="select is-fullwidth">
-                  <select name="tipo_documento_usuario">
+                  <select name="tipo_documento_usuario" required>
                     <option>Cédula ciudadania</option>
                     <option>Cédula extranjería</option>
                     <option>Pasaporte</option>
@@ -74,6 +76,7 @@
                   class="input is-danger" 
                   type="tel"
                   placeholder="Ingresa tu número de documento"
+                  required
                 >
                 <span class="icon is-small is-left">
                   <i class="fas fa-id-card"></i>
@@ -92,6 +95,7 @@
                   class="input is-danger" 
                   type="tel"
                   placeholder="Ejemplo: 3001234567"
+                  required
                 >
                 <span class="icon is-small is-left">
                   <i class="fas fa-phone"></i>
@@ -110,6 +114,7 @@
                   class="input is-danger" 
                   type="email"
                   placeholder="correo@ejemplo.com"
+                  required
                 >
                 <span class="icon is-small is-left">
                   <i class="fas fa-envelope"></i>
@@ -124,9 +129,10 @@
               <label class="label">Género</label>
               <div class="control">
                 <div class="select is-fullwidth">
-                  <select name="genero_usuario">
+                  <select name="genero_usuario" required>
                     <option>Femenino</option>
                     <option>Masculino</option>
+                    <option>Otro</option>
                   </select>
                 </div>
               </div>
@@ -136,7 +142,7 @@
               <label class="label">Cargo</label>
               <div class="control">
                 <div class="select is-fullwidth">
-                  <select name="cargo_usuario">
+                  <select name="cargo_usuario" required>
                     <option>Chef</option>
                     <option>Mesero</option>
                     <option>Bartender</option>
@@ -172,8 +178,9 @@
                   class="input is-success" 
                   type="password"
                   placeholder="Crea una contraseña segura"
+                  required
                 >
-                
+
                 <span class="icon is-small is-left">
                   <i class="fas fa-lock"></i>
                 </span>
@@ -197,14 +204,12 @@
               </div>
             </div>
               <div class="field is-grouped is-justify-content-center mt-5">
-  <center>
-  <div class="control">
+  <div class="control" class="title is-3 has-text-centered" >
     <a href="http://127.0.0.1:5500/Restaurante/index.html" class="button is-warning is-medium">
       Ir al inicio
     </a>
   </div>
 </div>
-</center>
         </div>
     </div>
 </section>
