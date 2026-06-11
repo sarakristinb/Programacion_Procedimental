@@ -16,10 +16,10 @@ function ValidarDatos() {
             if(nombre_usuario != /[a-zA-Z\s]+/.test(nombre_usuario)) {
                 console.log("los datos son inválidos.")
             }
-            if (numero_documento_usuario.length < 10) {
+            if (telefono_usuario.length < 10) {
                 console.log("los datos son inválidos."); 
             }
-            if (telefono_usuario.length < 10) {
+             if (numero_documento_usuario.length < 10) {
                 console.log("los datos son inválidos."); 
             }
             if (correo_usuario.includes("@") && correo_usuario.includes(".")) {
