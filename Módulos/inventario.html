@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="../css/inventario.css">
+    <title>Inventario</title>
+</head>
+<body>
+    <div class="field">
+  <label class="label">Código Producto</label>
+  <div class="control">
+    <input class="input" type="number" id="codigo" placeholder="Ejemplo: 12345">
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Nombre Producto</label>
+  <div class="control has-icons-left has-icons-right">
+    <input class="input is-success" type="text" id="nombre" placeholder="Ejemplo: Coca-Cola">
+    <span class="icon is-small is-left">
+      <i class="fas fa-user"></i>
+    </span>
+    <span class="icon is-small is-right">
+      <i class="fas fa-check"></i>
+    </span>
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Cantidad</label>
+  <div class="control has-icons-left has-icons-right">
+    <input class="input is-danger" 
+    type="number" 
+    id="cantidad" placeholder="Ejemplo: 100 ">
+    <span class="icon is-small is-left">
+      <i class="fas fa-envelope"></i>
+    </span>
+    <span class="icon is-small is-right">
+      <i class="fas fa-exclamation-triangle"></i>
+    </span>
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Marca Producto</label>
+  <div class="control has-icons-left has-icons-right">
+    <input class="input is-success" type="text" id="marca" placeholder="Ejemplo: Coca-Cola">
+    <span class="icon is-small is-left">
+      <i class="fas fa-user"></i>
+    </span>
+    <span class="icon is-small is-right">
+      <i class="fas fa-check"></i>
+    </span>
+  </div>
+</div>
+<div class="field is-grouped">
+  <div class="control">
+    <button class="button is-link">Enviar</button>
+  </div>
+  <div class="control">
+    <button class="button is-link is-light">Cancelar</button>
+  </div>
+</div>
+<center>
+<div class="control">
+    <a href="../index.html" class="button is-warning is-medium">
+      Ir al inicio
+    </a>
+  </div>
+  </center>
+</div>
+<script src="../js/inventario.js"></script>
+</body>
+</html>
