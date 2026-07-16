@@ -7,115 +7,115 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
     <title>Macdonitas - Sabores Medio Orientales</title>
 </head>
 <body>
 
-            <div class="box mt-6">
-                <h2 class="title is-3 has-text-centered">
-                    Haz tu pedido en Macdonitas
-                </h2>
-                <p class="has-text-centered mb-5">
-                    Completa el formulario y pronto estaremos preparando tu comida favorita.
-                </p>
+    <div class="box mt-6">
+        <h2 class="title is-3 has-text-centered">
+            Haz tu pedido en Macdonitas
+        </h2>
+        <p class="has-text-centered mb-5">
+            Completa el formulario y pronto estaremos preparando tu comida favorita.
+        </p>
 
-                <form>
-                    <div class="field">
-                        <label class="label">Nombre del cliente</label>
-                        <div class="control">
-                            <input 
-                                class="input" 
-                                type="text" 
-                                id="nombre_cliente"
-                                placeholder="Escribe tu nombre completo"
-                            >
-                        </div>
-                    </div>
-
-                    <div class="field">
-                        <label class="label">¿Qué producto deseas ordenar?</label>
-                        <div class="control">
-                            <div class="select is-fullwidth">
-                                <select name="producto">
-                                    <option>Selecciona un producto</option>
-                                    <option>Shawarma Mixto</option>
-                                    <option>Hummus Clásico</option>
-                                    <option>Falafel Crujiente</option>
-                                    <option>Baklava de Pistacho</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="field">
-                        <label class="label">Cantidad del producto</label>
-                        <div class="control">
-                            <input 
-                                id="cantidad_producto"
-                                class="input" 
-                                type="number" 
-                                placeholder="Ejemplo: 2"
-                            >
-                        </div>
-                    </div>
-
-                    <div class="field">
-                        <label class="label">Dirección de entrega</label>
-                        <div class="control">
-                            <textarea 
-                                id="direccion_entrega"
-                                class="textarea" 
-                                placeholder="Escribe la dirección donde deseas recibir tu pedido"
-                            ></textarea>
-                        </div>
-                    </div>
-
-                    <div class="field">
-                        <label class="label">Número de teléfono</label>
-                        <div class="control">
-                            <input 
-                            id="telefono_cliente"
-                            class="input" 
-                            type="tel" placeholder="Ejemplo: 3001234567"
-                            >
-                        </div>
-                    </div>
-
-                    <div class="field">
-                        <label class="label">Método de pago</label>
-                        <div class="control">
-                            <label class="radio">
-                                <input type="radio" name="pago">
-                                Efectivo
-                            </label>
-                            <label class="radio ml-4">
-                                <input type="radio" name="pago">
-                                Tarjeta
-                            </label>
-
-                            <label class="radio ml-4">
-                                <input type="radio" name="pago">
-                                Transferencia
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="field has-text-centered mt-5">
-                        <button class="button is-warning is-medium">
-                            Confirmar Pedido
-                        </button>
-                        <div class="field is-grouped is-justify-content-center mt-5">
-    
-                    <a href="http://127.0.0.1:5500/Restaurante/index.html" class="button is-warning is-medium">
-      Ir al inicio
-    </a>
-  </div>
-</div>
-                    </div>
-                </form>
+        <form>
+            <div class="field">
+                <label class="label">Nombre del cliente</label>
+                <div class="control">
+                    <input 
+                        class="input" 
+                        type="text" 
+                        id="nombre_cliente"
+                        placeholder="Escribe tu nombre completo"
+                    >
+                </div>
             </div>
 
-        </div>
+            <div class="field">
+                <label class="label">¿Qué producto deseas ordenar?</label>
+                <div class="control">
+                    <div class="select is-fullwidth">
+                        <select name="producto">
+                            <option value="">Selecciona un producto</option>
+                            <option>Shawarma Mixto</option>
+                            <option>Hummus Clásico</option>
+                            <option>Falafel Crujiente</option>
+                            <option>Baklava de Pistacho</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Cantidad del producto</label>
+                <div class="control">
+                    <input 
+                        id="cantidad_producto"
+                        class="input" 
+                        type="number" 
+                        placeholder="Ejemplo: 2"
+                    >
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Dirección de entrega</label>
+                <div class="control">
+                    <textarea 
+                        id="direccion_entrega"
+                        class="textarea" 
+                        placeholder="Escribe la dirección donde deseas recibir tu pedido"
+                    ></textarea>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Número de teléfono</label>
+                <div class="control">
+                    <input 
+                        id="telefono_cliente"
+                        class="input" 
+                        type="tel" 
+                        placeholder="Ejemplo: 3001234567"
+                    >
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Método de pago</label>
+                <div class="control">
+                    <label class="radio">
+                        <input type="radio" name="pago" value="Efectivo">
+                        Efectivo
+                    </label>
+                    <label class="radio ml-4">
+                        <input type="radio" name="pago" value="Tarjeta">
+                        Tarjeta
+                    </label>
+                    <label class="radio ml-4">
+                        <input type="radio" name="pago" value="Transferencia">
+                        Transferencia
+                    </label>
+                </div>
+            </div>
+
+            <div class="field has-text-centered mt-5">
+                <button type="button" class="button is-warning is-medium" onclick="guardarPedido(event)" id="guardar">
+                    Guardar Pedido
+                </button>
+                
+                <div class="field is-grouped is-justify-content-center mt-5">
+                    <a href="../index.html" class="button is-warning is-medium">
+                        Ir al inicio
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+
     <script src="../js/pedidos.js"></script>
 </body>
 </html>

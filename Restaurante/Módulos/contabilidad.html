@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contabilidad - Macdonitas</title>
-    </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
     <link rel="stylesheet" href="../css/contabilidad.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <div class="main-wrapper">
         
         <div class="outline-rect header-flat">
-            <h1 class="title is-3 has-text-centered is-marginless">contabilidad Macdonitas </h1>
+            <h1 class="title is-3 has-text-centered is-marginless">Contabilidad Macdonitas</h1>
         </div>
 
         <div class="outline-rect">
@@ -21,11 +21,10 @@
                 <div class="column is-4">
                     <div class="p-4">
                         <div class="profile-circle-flat">
-                            <img src="https://th.bing.com/th/id/OIP.e7N-igFLaKt3S-JiDBbMrgHaD4?w=200&h=200&c=10&o=6&pid=genserp&rm=2
-                            " alt="Avatar">
+                            <img src="https://th.bing.com/th/id/OIP.e7N-igFLaKt3S-JiDBbMrgHaD4?w=200&h=200&c=10&o=6&pid=genserp&rm=2" alt="Avatar">
                         </div>
                         <div class="name-rect-flat">
-                            contador contable de Macdonitas
+                            Contador Contable de Macdonitas
                         </div>
                     </div>
                 </div>
@@ -45,11 +44,8 @@
                                 <div class="column is-6">
                                     <div class="field">
                                         <label class="label">Fecha</label>
-                                        <div 
-                                        class="control">
-                                            <input 
-                                            class="input" 
-                                            type="date">
+                                        <div class="control">
+                                            <input class="input" type="date" id="fecha">
                                         </div>
                                     </div>
                                 </div>
@@ -57,23 +53,15 @@
                                     <div class="field">
                                         <label class="label">Ingresos</label>
                                         <div class="control">
-                                            <input class="input" 
-                                            type="number" 
-                                            placeholder="0.00" 
-                                            id="ingresos">
+                                            <input class="input" type="number" placeholder="0.00" id="ingresos">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="column is-6">
                                     <div class="field">
                                         <label class="label">Egresos</label>
-                                        <div 
-                                        class="control">
-                                            <input 
-                                            class="input" 
-                                            type="number" 
-                                            placeholder="0.00" 
-                                            id="egresos">
+                                        <div class="control">
+                                            <input class="input" type="number" placeholder="0.00" id="egresos">
                                         </div>
                                     </div>
                                 </div>
@@ -81,10 +69,7 @@
                                     <div class="field">
                                         <label class="label">Concepto</label>
                                         <div class="control">
-                                            <input class="input" 
-                                            type="text" 
-                                            placeholder="Escribe el concepto aquí" 
-                                            id="concepto">
+                                            <input class="input" type="text" placeholder="Escribe el concepto aquí" id="concepto">
                                         </div>
                                     </div>
                                 </div>
@@ -92,11 +77,7 @@
                                     <div class="field">
                                         <label class="label">Valor</label>
                                         <div class="control">
-                                            <input 
-                                            class="input is-link" 
-                                            type="number" 
-                                            placeholder="Valor final" 
-                                            id="valor">
+                                            <input class="input is-link" type="number" placeholder="Valor final" id="valor">
                                         </div>
                                     </div>
                                 </div>
@@ -109,24 +90,21 @@
         </div>
 
     </div>
-   
+    
+    <div class="field is-grouped is-justify-content-center mt-5">
+        <div class="field is-grouped">
+            <div class="control">
+                <button type="button" class="button is-warning is-medium" onclick="enviarContabilidad(event)">Enviar</button>
+            </div>
 
-<div class="field is-grouped is-justify-content-center mt-5">
-    <div class="field is-grouped">
-  <div class="control">
-    <button class="button is-warning is-medium">Enviar</button>
-  </div>
+            <div class="control">
+                <a href="../index.html" class="button is-warning is-medium">
+                    Ir al inicio
+                </a>
+            </div>
+        </div>
+    </div>
 
-
-   <div class="control">
-    <a href="http://127.0.0.1:5500/Restaurante/index.html" class="button is-warning is-medium">
-      Ir al inicio
-    </a>
-  </div>
- 
-</div>
-
-<script src="../js/contabilidad.js"></script>
-
+    <script src="../js/contabilidad.js"></script>
 </body>
 </html>
