@@ -24,8 +24,9 @@ function registrarUsuario(event) {
         return false;
     }
 
-    let regexLetras = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;
-    if (!regexLetras.test(nombre) || !regexLetras.test(apellido)) {
+    let sololetras = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;
+
+    if (!sololetras.test(nombre) || !sololetras.test(apellido)) {
         Swal.fire({
             icon: "error",
             title: "Formato de nombre incorrecto",
