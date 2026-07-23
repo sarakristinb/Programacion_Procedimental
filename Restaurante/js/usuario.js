@@ -76,7 +76,7 @@ function registrarUsuario(event) {
         html: `Bienvenido(a) al equipo, <b>${nombre} ${apellido}</b>.<br><br>
                <b>Cargo asignado:</b> ${cargo}<br>
                <b>Tu usuario es tu correo:</b> ${correo}`,
-        confirmButtonColor: "#ffdd57"
+        confirmButtonColor: "#0091bd"
     });
 
     return true;

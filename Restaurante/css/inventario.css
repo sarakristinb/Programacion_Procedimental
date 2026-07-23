@@ -12,3 +12,15 @@
         max-width: 800px;
         margin-bottom: 2rem;
       }
+
+      .image img {
+        object-fit: cover;
+        border-radius: 8px;
+      };
+      .image img {
+            object-fit: cover;
+            border-radius: 5px;
+        };
+.navbarBasicExample {
+            background-color: #0091bd;
+        }

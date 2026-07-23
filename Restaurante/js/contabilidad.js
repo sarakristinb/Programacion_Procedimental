@@ -64,7 +64,7 @@ function enviarContabilidad(event) {
                <b>Ingresos:</b> $${numIngresos.toFixed(2)}<br>
             <b>Egresos:</b> $${numEgresos.toFixed(2)}<br>
             <b>Concepto:</b> ${concepto}`,
-        confirmButtonColor: "#ffdd57"
+        confirmButtonColor: "#0091bd"
     });
 
     return true;

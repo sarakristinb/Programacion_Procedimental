@@ -47,7 +47,7 @@ function guardarPedido(event) {
         html: `Hola <b>${nombreCliente}</b>, tu orden por <b>${cantidadProducto}x ${producto}</b> ya se está procesando.<br><br>
                <b>Dirección:</b> ${direccionEntrega}<br>
                <b>Método de Pago:</b> ${metodoPago}`,
-        confirmButtonColor: "#ffdd57",
+        confirmButtonColor: "#0091bd",
         confirmButtonText: "¡gracias!"
     });
 

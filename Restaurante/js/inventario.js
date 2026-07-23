@@ -38,7 +38,7 @@ function guardarInventario(event) {
         html: `El producto <b>${nombre}</b> (${marca}) se agregó con éxito.<br><br>
              <b>Código:</b> ${codigo}<br>
                <b>Stock Inicial:</b> ${cantidad} unidades`,
-        confirmButtonColor: "#485fc7"
+        confirmButtonColor: "#0091bd"
     });
 
     return true;
